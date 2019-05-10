@@ -1,0 +1,11 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <h4 class="px-2"><%= @article.title %></h4>
+  <p class="px-2"><%= @article.content %></p>
+  <%= link_to edit_article_path(@article), class: "px-2" do %>
+     <i class="fas fa-pencil-alt"></i>
+  <% end %> |
+  <%= link_to articles_path do %>
+    <i class="fas fa-backward"></i>
+  <% end %>
+</div>
